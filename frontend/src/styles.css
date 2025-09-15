@@ -1,0 +1,72 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* Global body styles */
+body {
+  @apply bg-gradient-to-r from-blue-100 via-white to-blue-50 text-gray-900 font-sans;
+  scroll-behavior: smooth;
+}
+
+/* Links */
+a {
+  @apply transition-colors duration-300 hover:text-blue-600;
+}
+
+/* Buttons */
+button {
+  @apply transition transform duration-200 hover:scale-105 hover:shadow-lg;
+}
+
+/* Event cards hover animation */
+.event-card {
+  @apply bg-white rounded-xl shadow-md p-4 transition transform hover:scale-105 hover:shadow-2xl;
+}
+
+/* Hero section */
+.hero-bg {
+  background: linear-gradient(135deg, #4f46e5, #3b82f6);
+  @apply text-white min-h-[60vh] flex items-center justify-center relative overflow-hidden;
+}
+
+.hero-bg::before {
+  content: "";
+  @apply absolute inset-0 opacity-50;
+  background: url('/hero-pattern.svg') center/cover no-repeat;
+}
+
+/* Chatbot floating */
+.chatbot-container {
+  @apply fixed bottom-5 right-5 w-96 max-w-full bg-white shadow-2xl rounded-xl flex flex-col overflow-hidden animate-slide-up;
+}
+
+@keyframes slide-up {
+  0% { transform: translateY(100px); opacity: 0; }
+  100% { transform: translateY(0); opacity: 1; }
+}
+
+.animate-slide-up {
+  animation: slide-up 0.5s ease-out forwards;
+}
+
+/* Scrollbar */
+::-webkit-scrollbar {
+  width: 8px;
+}
+::-webkit-scrollbar-thumb {
+  @apply bg-blue-500 rounded-lg;
+}
+::-webkit-scrollbar-track {
+  @apply bg-gray-200 rounded-lg;
+}
+
+/* Smooth fade for messages */
+.message {
+  @apply transition-opacity duration-500;
+}
+.message-enter {
+  @apply opacity-0;
+}
+.message-enter-active {
+  @apply opacity-100;
+}
