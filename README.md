@@ -85,17 +85,16 @@ smart-college-event-hub/
 
 1. Clone the repository:
 
-```bash
 git clone https://github.com/tejasjundre/smart-college-event-hub.git
 cd smart-college-event-hub/frontend
 
 
-Install frontend dependencies:
+2.Install frontend dependencies:
 
 npm install
 
 
-Start the development server:
+3.Start the development server:
 
 npm run dev
 
@@ -103,7 +102,7 @@ npm run dev
 Visit http://localhost:5173
  to view the app locally.
 
-Running the Project
+5.Running the Project
 
 Development Mode: npm run dev
 
@@ -113,7 +112,7 @@ Preview Production Build: npm run preview
 
 Make sure your backend (if any) is running on the correct port and VITE_API_URL is set in .env.
 
-Deployment
+6.Deployment
 
 Frontend is deployed on Netlify: https://smart-college-event-hub00.netlify.app/
 
@@ -127,7 +126,7 @@ Set frontend/dist as the publish directory
 
 Trigger deployment
 
-Environment Variables
+7.Environment Variables
 
 Create a .env file in the frontend/ folder for any environment variables:
 
@@ -136,7 +135,7 @@ VITE_API_URL=https://your-backend-api-url
 
 For backend deployment on Railway, specify the port your server listens on and any DB credentials.
 
-Contributing
+8.Contributing
 
 We welcome contributions to improve this project:
 
