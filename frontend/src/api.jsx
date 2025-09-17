@@ -1,7 +1,7 @@
 import axios from "axios";
 
-const api = axios.create({
-  baseURL: "http://localhost:5000/api", // change for deployment
+const API = axios.create({
+  baseURL: "https://smart-college-event-hub-2.onrender.com/api"
 });
 
-export default api;
+export default API;
